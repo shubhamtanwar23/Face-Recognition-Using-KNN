@@ -23,14 +23,14 @@ face_cas = cv2.CascadeClassifier('./haarcascade_frontalface_default.xml')
 font = cv2.FONT_HERSHEY_SIMPLEX
 
 # load the data from the numpy matrices and convert them into linear shape array
-f_01 = np.load('face_01.npy').reshape((20, 50*50*3))
+f_01 = np.load('face_01.npy').reshape((20, 50*50*3))			# give the name of file used while recording faces
 f_02 = np.load('face_02.npy').reshape((20, 50*50*3))
 
 
 print(f_01.shape, f_02.shape)
 
 # create a look up dictionary
-names = { 0 : "Admin", 
+names = { 0 : "Admin", 							# Assign each person a number using dictionary
 		  1 : "Guest" }
 
 

@@ -58,5 +58,5 @@ data = np.asarray(data)
 
 print (data.shape)
 
-np.save('face_02', data)
+np.save('face_0', data)   			# change the first parameter to save the recorded face info in a file
 
